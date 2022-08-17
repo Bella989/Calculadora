@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+header{
+    margin: 20px 0;
+    text-align: center;
+}
+.calculadora{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    max-width: 800px;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    "display display display display"
+    "botoes botoes botoes botoes"
+    "botoes botoes botoes botoes"
+    "botoes botoes botoes botoes"
+    "botoes botoes botoes botoes";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#display{
+    font-size: 60px;
+    grid-area: display;
+    margin-bottom: 2px;
+    text-align: right;
+    width: 100%;
+    border: 1px solid;
+}
+
+#botoes{
+    grid-area: botoes;
+}
+#numeros{
+    grid-area: botoes;
+}
+
+.botao{
+    font-size: 20px;
+    margin: 2px 0;
+    width: 24.3%;
+    height: 19%;
+}
+
