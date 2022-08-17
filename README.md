@@ -1,7 +1,9 @@
 # Calculadora
 Uma calculadora simples ainda em desenvolvimento
 
-Melhorias a serem feitas:
+Link para apagina: 
+
+São esperadas as seguintes melhorias:
 - Estilizar calculadora
 - Acrescentar operações
 - Adicionar visualização do histórico
