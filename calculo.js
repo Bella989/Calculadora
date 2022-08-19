@@ -38,14 +38,14 @@ const aAspas = () =>{ // abrindo as aspas
     if (espresao == 0){ 
         espresao = "("; // adicionando informação á espresão
     }else{
-        espresao += "("; // adicionando informação á espresão
+        espresao += "*("; // adicionando informação á espresão
     }
     aspas += 1; // almentando o numero de aspas abertas
     display.innerHTML = espresao; // atualizando o display
 }
 const fAspas = () =>{
     if (aspas > 0){ // feichando as aspas se elas estiverem abertas
-        espresao += ")"; // adicionando informação á espresão
+        espresao += ")*"; // adicionando informação á espresão
         aspas -= 1; // diminuindo o numero de aspas abertas
     }
     display.innerHTML = espresao; // atualizando o display
