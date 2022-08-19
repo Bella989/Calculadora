@@ -3,15 +3,21 @@
     padding: 0;
     font-family: Calibri, Arial, Helvetica, sans-serif;
 }
+
+body{
+    background-color: #A6A6A6;
+    color: #384547;
+}
+
 header{
     margin: 20px 0;
     text-align: center;
 }
 .calculadora{
-    border: 1px solid black;
-    padding: 10px;
+    border: 7px ridge #CB7070;
+    padding: 30px 15px 20px;
     border-radius: 10px;
-    background-color: whitesmoke;
+    background-color: #f59b9b;
     max-width: 800px;
     width: 400px;
     height: 400px;
@@ -28,12 +34,15 @@ header{
 }
 
 #display{
+    box-sizing: border-box;
     font-size: 60px;
     grid-area: display;
-    margin-bottom: 2px;
+    margin-bottom: 12px;
     text-align: right;
     width: 100%;
-    border: 1px solid;
+    border: 2px inset #CB7070;
+    background-color: #B6FCFC;
+    padding: 0 5px;
 }
 
 #botoes{
@@ -44,9 +53,12 @@ header{
 }
 
 .botao{
-    font-size: 20px;
+    border-radius: 20px;
+    font-size: 30px;
     margin: 2px 0;
     width: 24.3%;
     height: 19%;
+    background-color: #FCB1B1;
+    border-color: #CB7070;
+    border-width: 3px;
 }
-
