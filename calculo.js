@@ -1,58 +1,66 @@
-// criação e referenciação de elementos utilizados para o funcionamento da calculadora
+// criação e referenciação de elementos utilizados
 let display = document.getElementById('display')
 let espresao = "0";
 let aspas = 0;
 let historico = [];
 
-
+// apagando ultimo valor digitado
 const apagar = () => {
     if (espresao.length > 1){
-        espresao =  espresao.substring(0, espresao.length -1); // apagando ultimo valor digitado
+        espresao =  espresao.substring(0, espresao.length -1); 
     }else{
-        espresao = 0; // redefinindo valor para 0 quando não ouver informação digitada
+        espresao = 0; // redefinindo valor para 0 quando esvaziar a espresao
     }
     display.innerHTML = espresao; // atualizando o display
 }
+
+// limpando espresão
 const limpar = () => { 
-    espresao = 0; // limpando espresão
+    espresao = 0; 
     display.innerHTML = espresao; // atualizando o display
 }
 
-const numero = (num) => { // adicionando numeros ao display
+// adicionando numeros ao display
+const numero = (num) => { 
     if (espresao == 0){
-        espresao = num; // adicionando informação á espresão
+        espresao = num;
     }else{
-        espresao += num; // adicionando informação á espresão
+        espresao += num; 
     }
     display.innerHTML = espresao; // atualizando o display
 }
 
+// adicionando operador se o display não estiver vazio
 const operador = (operador) => {
-    if (espresao !== 0){ // adicionando operador se o display não estiver vazio
-        espresao += operador; // adicionando informação á espresão
+    if (espresao !== 0){ 
+        espresao += operador;
     }
     display.innerHTML = espresao; // atualizando o display
 }
 
-const aAspas = () =>{ // abrindo as aspas
+// abrindo as aspas
+const aAspas = () =>{
     if (espresao == 0){ 
-        espresao = "("; // adicionando informação á espresão
+        espresao = "(";
     }else{
-        espresao += "*("; // adicionando informação á espresão
+        espresao += "*(";
     }
     aspas += 1; // almentando o numero de aspas abertas
     display.innerHTML = espresao; // atualizando o display
 }
+
+// feichando as aspas se elas estiverem abertas
 const fAspas = () =>{
-    if (aspas > 0){ // feichando as aspas se elas estiverem abertas
-        espresao += ")*"; // adicionando informação á espresão
+    if (aspas > 0){ 
+        espresao += ")*";
         aspas -= 1; // diminuindo o numero de aspas abertas
     }
     display.innerHTML = espresao; // atualizando o display
 }
 
-const caucular = () => {
-    let resultado = eval(display.innerHTML); // calculando o resultado
+ // calculando o resultado
+const calcular = () => {
+    let resultado = eval(display.innerHTML);
     historico[historico.length] = (espresao+" = "+resultado); // salvando a conta
     espresao = 0; // limpando o display
     console.log(historico); // exibindo o historico no console
