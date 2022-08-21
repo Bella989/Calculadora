@@ -1,10 +1,6 @@
-# Calculadora
-Uma calculadora simples ainda em desenvolvimento
-
-Link para apagina: https://bella989.github.io/Calculadora/
+# Calculadora  https://bella989.github.io/Calculadora/
+Uma calculadora simples ainda sem muitas funções
 
 São esperadas as seguintes melhorias:
-- Estilizar calculadora
-- Acrescentar operações
 - Adicionar visualização do histórico
-- Criar calculadoras para cálculos específicos
+- Trabalhar na respondividade 
