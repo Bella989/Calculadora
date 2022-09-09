@@ -3,4 +3,3 @@ Uma calculadora simples ainda sem muitas funções
 
 São esperadas as seguintes melhorias:
 - Adicionar visualização do histórico
-- Trabalhar na respondividade 
